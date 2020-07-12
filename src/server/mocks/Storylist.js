@@ -1,14 +1,14 @@
 export default [
     {
         author: "Mufu Oloosha oko",
-        title: "The Might Ol' Bridge",
+        title: "The Mighty Ol' Bridge",
         content: 'What goes around comes around.',
         liked_one: 'madboy001',
         likes: 300,
         favorite: true,
         liked: false,
         comments: 30,
-        show: false
+        show: true,
     }, 
     {
         author: "John CR",

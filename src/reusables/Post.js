@@ -25,7 +25,7 @@ const Post = ({ data }) => {
 
     return(
         <>
-            {show && <div className="bg-white transition duration-150 ease-linear hover:bg-gray-100 cursor-pointer hover:border-gray-500 rounded-sm border border-gray-300 my-4">
+            {show && <div className="bg-transparent transition duration-150 ease-linear hover:bg-white cursor-pointer hover:border-gray-500 rounded-md border border-gray-300 my-4">
                 <div className="flex flex-wrap flex-row w-full h-16 p-2 justify-between">
                     <div className="flex flex-wrap flex-row">
                         <div className="ml-2 h-12 w-12 bg-gray-400 rounded-full"></div>

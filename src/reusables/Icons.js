@@ -10,6 +10,7 @@ import {ReactComponent as PlusIcon} from '../assets/plus.svg'
 import {ReactComponent as LikeIcon} from '../assets/heart.svg'
 import {ReactComponent as LikedIcon} from '../assets/heart-filled.svg'
 import {ReactComponent as CommentIcon} from '../assets/bubble.svg'
+import {ReactComponent as LibraryIcon} from '../assets/library.svg'
 
 const Down = () => (
     <DownArrow className="h-5 w-5 text-gray-200" />
@@ -55,4 +56,8 @@ const Comment = () => (
     <CommentIcon className="h-5 w-5 text-gray-200" />
 )
 
-export {Down, Home, Stories, Book, Star, Bell, Add, Like, Liked, Comment, Starred};
+const Library = () => (
+    <LibraryIcon className="h-5 w-5 text-gray-200" />
+)
+
+export {Down, Home, Stories, Book, Star, Bell, Add, Like, Liked, Comment, Starred, Library};

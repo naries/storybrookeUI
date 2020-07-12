@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Post from '../../reusables/Post'
 import AddPost from '../../reusables/AddPost'
-import CreatePost from '../../reusables/CreatePost';
+import CreatePost from '../../reusables/CreatePost'
 import Storylist from '../../server/mocks/Storylist'
 
 const Main = () => {
