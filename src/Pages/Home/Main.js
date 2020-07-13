@@ -19,7 +19,7 @@ const Main = () => {
         showCreator(!creator)
     }
 
-    const content = <div className="col-span-7 md:col-span-2 lg:col-span-3 text-gray-700 text-center px-4 py-2 m-2 ">
+    const content = <div className="col-span-7 overflow-auto md:col-span-2 lg:col-span-3 text-gray-700 text-center px-4 py-2 m-2 ">
             <AddPost creator={creator} toggleCreator={()=>_toggleNewStoryCreator()} />
             {creator && <CreatePost loading = {loading} replaceLoading={()=>_replaceWithLoading()} />}
             {scon.map((story, i) => <Post key={i} data={story}/>)}

@@ -19,29 +19,33 @@ const Sidebar = () => {
             </div>
             <div >
                 <div className="flex content-center flex-wrap">
-                    <div className="cursor-pointer hover:font-bold w-1/2 p-2 text-left">3 Following</div>
-                    <div className="cursor-pointer hover:font-bold w-1/2 p-2 text-left">5 Followers</div>
+                    <Link to="/following">
+                        <div className="cursor-pointer hover:font-bold p-2 text-left">3 Following</div>
+                    </Link>
+                    <Link to="/followers">
+                        <div className="cursor-pointer hover:font-bold p-2 text-left">5 Followers</div>
+                    </Link>
                 </div>
             </div>
             <div className="">
+                <Link to="/home">
                 <div className="cursor-pointer transition duration-300 ease-linear hover:bg-gray-200 pl-2 border-2 rounded-sm border-transparent hover:border-gray-700 flex flex-row content-center flex-wrap  h-12 my-2 text-left font-semibold text-lg justify-between">
-                    <Link to="/home">
                         <div className="flex flex-row flex-wrap content-center">
                             <div className="flex flex-row flex-wrap content-center "><Home /></div>
                             <div className="ml-4">Home</div>
                         </div>
-                    </Link>
-                    <div className="flex flex-wrap text-sm content-center p-1 px-3 bg-red-700 mr-6 text-white border border-white rounded-full">12</div>
+                    <div className="flex flex-wrap text-sm content-center p-1 px-3 mr-6 text-red-600">12</div>
                 </div>
+                </Link>
+                <Link to="/Stories">
                 <div className="cursor-pointer transition duration-300 ease-linear hover:bg-gray-200 pl-2 border-2 rounded-sm border-transparent hover:border-gray-700 flex flex-row content-center flex-wrap  h-12 my-2 text-left font-semibold text-lg justify-between">
-                    <Link to="/Stories">
                         <div className="flex flex-row flex-wrap content-center">
                             <div className="flex flex-row flex-wrap content-center "><Stories /></div>
                                 <div className = "ml-4">Stories</div>
                         </div>
-                    </Link>
-                    <div className="flex flex-wrap text-sm content-center p-1 px-3 bg-red-700 mr-6 text-white border border-white rounded-full">12 new</div>
+                    <div className="flex flex-wrap text-sm content-center p-1 px-3 mr-6 text-red-600">12 new</div>
                 </div>
+                </Link>
                 <Link to ="/library">
                 <div className="cursor-pointer transition duration-300 ease-linear hover:bg-gray-200 pl-2 border-2 rounded-sm border-transparent hover:border-gray-700 flex flex-row content-center flex-wrap  h-12 my-2 text-left font-semibold text-lg justify-between">
                         <div className="flex flex-row flex-wrap content-center">
@@ -64,7 +68,7 @@ const Sidebar = () => {
                             <div className="flex flex-row flex-wrap content-center "><Bell /></div>
                                 <div className = "ml-4">Notification</div>
                         </div>
-                        <div className="flex flex-wrap text-sm content-center p-1 px-3 bg-red-700 mr-6 text-white border border-white rounded-full">1</div>
+                        <div className="flex flex-wrap text-sm content-center p-1 px-3 mr-6 text-red-600">1</div>
                     </div>
                 </Link>
             </div>
